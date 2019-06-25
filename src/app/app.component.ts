@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'AngularRxJs';
+  title: string;
+
+  constructor() {
+    this.title = 'Angular Practice along with AngularRxJs Library.';
+  }
+
 }

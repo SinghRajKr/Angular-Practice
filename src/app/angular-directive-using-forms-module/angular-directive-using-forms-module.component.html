@@ -1,0 +1,35 @@
+<div style="text-align: center">
+  <h3>{{ title + "!" }}</h3>
+  <p>{{ message }}</p>
+</div>
+<div class="example-full-width">
+    <h5>Two Way Data Binding Using [ngModel] and (ngModelChange)</h5>
+  <mat-form-field class="example-full-width">
+    <input
+      matInput
+      type="text"
+      [ngModel]="name"
+      (ngModelChange)="handleChange($event)"
+      placeholder="Name"
+    />
+  </mat-form-field>
+  <p style="color:crimson">
+    Two Way Data Binding <span style="color:green">{{ name }}</span>
+  </p>
+</div>
+
+
+<div class="example-full-width">
+    <h5>Two Way Data Binding Using [(ngModel)]</h5>
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        type="text"
+        [(ngModel)]="name"
+        placeholder="Name"
+      />
+    </mat-form-field>
+    <p style="color:crimson">
+      Two Way Data Binding <span style="color:green">{{ name }}</span>
+    </p>
+  </div>

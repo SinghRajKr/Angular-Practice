@@ -1,0 +1,31 @@
+
+<form class="example-form">
+    <div style="text-align: center">
+        <h1>{{ title + "!" }}</h1>
+    </div>
+      
+      <div class="example-full-width">
+          <h3>One Way Data Binding Using Blur Event</h3>
+          <mat-form-field class="example-full-width">
+              <input matInput type="text" [value]="name" placeholder="Name" (blur)="handleBlur($event)">
+            </mat-form-field>
+            <P>Handing blur event(i.e Remove cursor from Input Text.)</P>
+            <p style="color:crimson">Handling - event.target.value: <span style="color:green">{{name}}</span> </p>
+      </div>
+      
+      <div class="example-full-width">
+          <h3>Two Way Data Binding Using Blur Event</h3>
+          <mat-form-field class="example-full-width">
+              <input matInput type="text" [value]="message" placeholder="Message" (blur)="handleInput($event)">
+            </mat-form-field>
+            <p>Two way data binding with the help of event handler.</p>
+            <p style="color:crimson">Setting Input Text Field Value using Handling - event.target.value: <span style="color:green">{{message}}</span> </p>
+            <p>Angular Change detection listener updates the input text value.</p>
+          </div>
+</form>
+
+<div style="text-align: center">
+    <h3>Click Event</h3>
+    <h5>{{handleTitle}}</h5>
+    <button mat-raised-button color="primary" (click)="handleClick($event)">Click Handle Event</button>
+</div>

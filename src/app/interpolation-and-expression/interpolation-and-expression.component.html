@@ -1,0 +1,13 @@
+<div style="text-align: center">
+  <h3>
+    {{title + '!'}} 
+  </h3>
+</div>
+
+<div style="text-align: center">
+  <p>Number One: {{numberOne}}</p>
+  <p>Number Two: {{numberTwo}}</p>
+  <p>Sum of Both: {{numberOne + numberTwo}}</p>
+  <p>Are you happy: {{areYouHappy ? 'Yes :)' : 'No :('}}</p>
+  <span *ngIf="!areYouHappy"><button mat-raised-button color="primary" (click)="changeHappyStatus($event)">Change Happy Status</button></span>
+</div>

@@ -1,0 +1,15 @@
+<div style="text-align: center">
+    <h1 [innerHTML]="title" ></h1>
+  </div>
+  
+  <div style="text-align: center">
+    <p> Property Binding is pure one way Data Flow.</p>
+    <h3>{{'This title is being displayed from Interpolation ' + title}}</h3>
+    <p>Following Image src is mapped dynamically using Property Binding.</p>
+    <img [src]="dynamicLogoPath" alt="Image" style="width: 400px; height: 200px">
+    <p>The value in following text field is set using Property Binding.</p>
+    <mat-form-field auto>
+        <input matInput type="text" [value]="name" placeholder="Name">
+      </mat-form-field>
+      <p>The value of Name will not change: {{name}}</p>
+  </div>
