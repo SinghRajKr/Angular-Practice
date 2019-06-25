@@ -6,10 +6,41 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./andular-directive-ng-for.component.scss']
 })
 export class AndularDirectiveNgForComponent implements OnInit {
+  title: string;
+  currentDate = new Date();
 
-  constructor() { }
+ 
+  
+  colors: any = [
+    {
+      colorName: 'red',
+      colorValue: '#f00',
+      child:  {
+        name: 'Photos',
+        updated: new Date('1/1/16'),
+      }
+    },
+    {
+      colorName: 'green',
+      colorValue: '#0f0',
+      child: {
+        name: 'Recipes',
+        updated: new Date('1/17/16'),
+      }
+    },
+    {
+      colorName: 'blue',
+      colorValue: '#00f',
+      child:{
+        name: 'Work',
+        updated: new Date('1/28/16'),
+      }
+    },
+   ];
 
+  constructor() {
+    this.title = 'Angular Directive *ngFor';
+   }
   ngOnInit() {
   }
-
 }
