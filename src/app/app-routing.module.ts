@@ -6,13 +6,17 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 // tslint:disable-next-line: max-line-length
 import { AngularDirectiveUsingFormsModuleComponent } from './angular-directive-using-forms-module/angular-directive-using-forms-module.component';
 import { TemaplateReferenceVariableComponent } from './temaplate-reference-variable/temaplate-reference-variable.component';
+import { AndularDirectiveNgIfComponent } from './andular-directive-ng-if/andular-directive-ng-if.component';
+import { AndularDirectiveNgForComponent } from './andular-directive-ng-for/andular-directive-ng-for.component';
 
 const routes: Routes = [
   { path: 'interpolation', component: InterpolationAndExpressionComponent },
   { path: 'property-binding', component: PropertyBindingComponent },
   { path: 'event-binding', component: EventBindingComponent },
   { path: 'angular-directive', component: AngularDirectiveUsingFormsModuleComponent },
-  { path: 'template-ref-variable', component: TemaplateReferenceVariableComponent }
+  { path: 'template-ref-variable', component: TemaplateReferenceVariableComponent },
+  { path: 'ngif', component: AndularDirectiveNgIfComponent},
+  { path: 'ngfor', component: AndularDirectiveNgForComponent},
 ];
 
 @NgModule({

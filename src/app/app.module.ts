@@ -11,6 +11,8 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { AngularDirectiveUsingFormsModuleComponent } from './angular-directive-using-forms-module/angular-directive-using-forms-module.component';
 import { TemaplateReferenceVariableComponent } from './temaplate-reference-variable/temaplate-reference-variable.component';
+import { AndularDirectiveNgIfComponent } from './andular-directive-ng-if/andular-directive-ng-if.component';
+import { AndularDirectiveNgForComponent } from './andular-directive-ng-for/andular-directive-ng-for.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { TemaplateReferenceVariableComponent } from './temaplate-reference-varia
     PropertyBindingComponent,
     EventBindingComponent,
     AngularDirectiveUsingFormsModuleComponent,
-    TemaplateReferenceVariableComponent
+    TemaplateReferenceVariableComponent,
+    AndularDirectiveNgIfComponent,
+    AndularDirectiveNgForComponent
   ],
   imports: [
     BrowserModule,
