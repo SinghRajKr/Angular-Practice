@@ -22,10 +22,11 @@
             <p style="color:crimson">Setting Input Text Field Value using Handling - event.target.value: <span style="color:green">{{message}}</span> </p>
             <p>Angular Change detection listener updates the input text value.</p>
           </div>
+          <div style="text-align: center">
+                <h3>Click Event</h3>
+                <h5>{{handleTitle}}</h5>
+                <button mat-raised-button color="primary" (click)="handleClick()">Click Handle Event</button>
+            </div>
 </form>
 
-<div style="text-align: center">
-    <h3>Click Event</h3>
-    <h5>{{handleTitle}}</h5>
-    <button mat-raised-button color="primary" (click)="handleClick($event)">Click Handle Event</button>
-</div>
+

@@ -10,6 +10,7 @@ import { MaterialModule } from './material/material.module';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { AngularDirectiveUsingFormsModuleComponent } from './angular-directive-using-forms-module/angular-directive-using-forms-module.component';
+import { TemaplateReferenceVariableComponent } from './temaplate-reference-variable/temaplate-reference-variable.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AngularDirectiveUsingFormsModuleComponent } from './angular-directive-u
     InterpolationAndExpressionComponent,
     PropertyBindingComponent,
     EventBindingComponent,
-    AngularDirectiveUsingFormsModuleComponent
+    AngularDirectiveUsingFormsModuleComponent,
+    TemaplateReferenceVariableComponent
   ],
   imports: [
     BrowserModule,

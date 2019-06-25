@@ -5,12 +5,14 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 // tslint:disable-next-line: max-line-length
 import { AngularDirectiveUsingFormsModuleComponent } from './angular-directive-using-forms-module/angular-directive-using-forms-module.component';
+import { TemaplateReferenceVariableComponent } from './temaplate-reference-variable/temaplate-reference-variable.component';
 
 const routes: Routes = [
   { path: 'interpolation', component: InterpolationAndExpressionComponent },
   { path: 'property-binding', component: PropertyBindingComponent },
   { path: 'event-binding', component: EventBindingComponent },
-  { path: 'angular-directive', component: AngularDirectiveUsingFormsModuleComponent }
+  { path: 'angular-directive', component: AngularDirectiveUsingFormsModuleComponent },
+  { path: 'template-ref-variable', component: TemaplateReferenceVariableComponent }
 ];
 
 @NgModule({
