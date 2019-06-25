@@ -18,6 +18,7 @@ export class AndularDirectiveNgForComponent implements OnInit {
       child:  {
         name: 'Photos',
         updated: new Date('1/1/16'),
+        likes: 2
       }
     },
     {
@@ -26,14 +27,16 @@ export class AndularDirectiveNgForComponent implements OnInit {
       child: {
         name: 'Recipes',
         updated: new Date('1/17/16'),
+        likes: 20
       }
     },
     {
       colorName: 'blue',
       colorValue: '#00f',
-      child:{
+      child: {
         name: 'Work',
         updated: new Date('1/28/16'),
+        likes: null
       }
     },
    ];

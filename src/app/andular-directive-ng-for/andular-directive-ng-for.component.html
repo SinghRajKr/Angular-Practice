@@ -11,6 +11,7 @@
           <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{currentDate | date: 'y MMMM d' | uppercase}}</mat-list-item>
           <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{color.child.name | uppercase}}</mat-list-item>
           <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{color.child.updated | date:'dd MM y'}}</mat-list-item>
+          <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{color.child.likes? 'Likes' : 'No Likes'}}</mat-list-item>
         </mat-list>
   </div>
 
