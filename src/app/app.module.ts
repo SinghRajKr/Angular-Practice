@@ -24,7 +24,7 @@ import { AndularDirectiveNgForComponent } from './andular-directive-ng-for/andul
     AngularDirectiveUsingFormsModuleComponent,
     TemaplateReferenceVariableComponent,
     AndularDirectiveNgIfComponent,
-    AndularDirectiveNgForComponent
+    AndularDirectiveNgForComponent,
   ],
   imports: [
     BrowserModule,

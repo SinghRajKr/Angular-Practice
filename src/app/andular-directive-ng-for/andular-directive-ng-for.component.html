@@ -1,25 +1,21 @@
 <div style="text-align: center">
-    <h3>{{ title + "!" }}</h3>
-    <p>Let's see the use of *ngFor</p>
-  </div>
-  <div class="example-full-width">
-      <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{currentDate | date: 'yMMMd'}}</mat-list-item>
-      <mat-list style="text-align: center" role="list" *ngFor="let color of colors; let i = index;">
-          <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{color.colorName | uppercase}} <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{color.colorValue}}</span></mat-list-item>
-          <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{color.colorName | lowercase}} <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{color.colorValue}}</span></mat-list-item>
-          <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{currentDate | date: 'd/MMM/y'}}</mat-list-item>
-          <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{currentDate | date: 'y MMMM d' | uppercase}}</mat-list-item>
-          <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{color.child.name | uppercase}}</mat-list-item>
-          <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{color.child.updated | date:'dd MM y'}}</mat-list-item>
-          <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{color.child.likes? 'Likes' : 'No Likes'}}</mat-list-item>
-        </mat-list>
-  </div>
-
-  <div style="text-align: center">
-      <p style="color: purple">*ngFor is equivalent to template When list exists then it will render template like *ngFor.</p>
-        <p>
-            &lt;template [ngFor]="let color of colors; let i = index"&gt;
-            Your renderd list goes here 
-            &lt;template&gt;
-        </p>
-    </div>
+  <h3>{{ title + "!" }}</h3>
+</div>
+<div class="example-full-width">
+  <mat-list-item role="listitem"
+    >{{ i }}&nbsp;&nbsp;{{ currentDate | date: "yMMMd" }}</mat-list-item
+  >
+  <mat-list style="text-align: center" role="list" *ngFor="let color of colors; let i = index">
+    <mat-list-item role="listitem">
+      {{ i }}&nbsp;&nbsp;{{ color.colorName | uppercase }}<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ color.colorValue }}</span></mat-list-item>
+    <mat-list-item role="listitem">{{ i }}&nbsp;&nbsp;{{ color.colorName | lowercase }}
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ color.colorValue }}</span></mat-list-item>
+    <mat-list-item role="listitem">{{ i }}&nbsp;&nbsp;{{ currentDate | date: "d/MMM/y" }}</mat-list-item>
+    <mat-list-item role="listitem"
+      >{{ i }}&nbsp;&nbsp;{{currentDate | date: "y MMMM d" | uppercase}}</mat-list-item>
+    <mat-list-item role="listitem">{{ i }}&nbsp;&nbsp;{{ color.child.name | uppercase }}</mat-list-item>
+    <mat-list-item role="listitem">{{ i }}&nbsp;&nbsp;{{
+        color.child.updated | date: "dd MM y"}}</mat-list-item>
+    <mat-list-item role="listitem">{{ i }}&nbsp;&nbsp;{{color.child.likes ? "Likes" : "No Likes"}}</mat-list-item>
+  </mat-list>
+</div>

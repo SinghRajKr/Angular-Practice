@@ -8,9 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class AndularDirectiveNgForComponent implements OnInit {
   title: string;
   currentDate = new Date();
-
- 
-  
   colors: any = [
     {
       colorName: 'red',

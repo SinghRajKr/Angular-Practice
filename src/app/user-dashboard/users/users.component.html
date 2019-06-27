@@ -1,0 +1,12 @@
+<div style="text-align: center">
+  <h3>{{ title + "!" }}</h3>
+</div>
+<div class="example-full-width">
+    <mat-list style="text-align: center" role="list" *ngFor="let user of users;">
+      <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;Name: <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{user.name}}</span></mat-list-item>
+      <!-- <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;Age: <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{user.age}}</span></mat-list-item>
+      <mat-list-item role="listitem">{{i}}&nbsp;&nbsp;{{user.child.name | uppercase}}</mat-list-item> -->
+      </mat-list>
+</div>
+<app-user-details *ngFor="let user of users;" ></app-user-details>
+<app-user-count [userCount]="users"></app-user-count>

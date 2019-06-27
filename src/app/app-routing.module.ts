@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'template-ref-variable', component: TemaplateReferenceVariableComponent },
   { path: 'ngif', component: AndularDirectiveNgIfComponent},
   { path: 'ngfor', component: AndularDirectiveNgForComponent},
+  { path: 'user-dashboard', loadChildren: './user-dashboard/user-dashboard.module#UserDashboardModule'},
 ];
 
 @NgModule({
