@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'ngif', component: AndularDirectiveNgIfComponent},
   { path: 'ngfor', component: AndularDirectiveNgForComponent},
   { path: 'user-dashboard', loadChildren: './user-dashboard/user-dashboard.module#UserDashboardModule'},
+  { path: 'rxjs', loadChildren: './rxjs/rxjs.module#RxjsModule'},
 ];
 
 @NgModule({

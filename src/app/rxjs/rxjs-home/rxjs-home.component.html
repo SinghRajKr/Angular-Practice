@@ -1,0 +1,11 @@
+<h3 style="text-align: center">RxJs Home Page</h3>
+<button type="button" (click)="useObservable()" style="align-items: center">Check Observable Value</button>
+<div *ngIf="flag" style="text-align: center">
+  <p *ngFor="let result of results" style="text-align: center">
+    {{ result }}
+  </p>
+</div>
+<p *ngIf="completion" style="text-align: center"><b>Completed</b>!!!</p>
+
+<app-infinite-observable-with-cancel></app-infinite-observable-with-cancel>
+<app-multiple-subscription-to-same-observable></app-multiple-subscription-to-same-observable>
