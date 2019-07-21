@@ -8,6 +8,7 @@ import { AngularDirectiveUsingFormsModuleComponent } from './angular-directive-u
 import { TemaplateReferenceVariableComponent } from './temaplate-reference-variable/temaplate-reference-variable.component';
 import { AndularDirectiveNgIfComponent } from './andular-directive-ng-if/andular-directive-ng-if.component';
 import { AndularDirectiveNgForComponent } from './andular-directive-ng-for/andular-directive-ng-for.component';
+import { StreamsComponent } from './streams/streams.component';
 
 const routes: Routes = [
   { path: 'interpolation', component: InterpolationAndExpressionComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'ngfor', component: AndularDirectiveNgForComponent},
   { path: 'user-dashboard', loadChildren: './user-dashboard/user-dashboard.module#UserDashboardModule'},
   { path: 'rxjs', loadChildren: './rxjs/rxjs.module#RxjsModule'},
+  { path: 'streams', component: StreamsComponent },
 ];
 
 @NgModule({

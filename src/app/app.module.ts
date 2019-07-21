@@ -13,6 +13,7 @@ import { AngularDirectiveUsingFormsModuleComponent } from './angular-directive-u
 import { TemaplateReferenceVariableComponent } from './temaplate-reference-variable/temaplate-reference-variable.component';
 import { AndularDirectiveNgIfComponent } from './andular-directive-ng-if/andular-directive-ng-if.component';
 import { AndularDirectiveNgForComponent } from './andular-directive-ng-for/andular-directive-ng-for.component';
+import { StreamsComponent } from './streams/streams.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { AndularDirectiveNgForComponent } from './andular-directive-ng-for/andul
     TemaplateReferenceVariableComponent,
     AndularDirectiveNgIfComponent,
     AndularDirectiveNgForComponent,
+    StreamsComponent,
   ],
   imports: [
     BrowserModule,

@@ -18,7 +18,7 @@ export class RxjsHomeComponent implements OnInit {
   }
 
   myObservable() {
-    this.observable = Observable.create(observer => {
+    this.observable = Observable.create( (observer) => {
       try {
         observer.next('Welcome');
         observer.next('To');
@@ -48,3 +48,19 @@ export class RxjsHomeComponent implements OnInit {
     );
   }
 }
+
+// Following code is Producer
+// Producer is activated when it's subscription is created
+
+// (observer) => {
+//   try {
+//     observer.next('Welcome');
+//     observer.next('To');
+//     observer.next('Rxjs');
+//     observer.next('Concept');
+//     observer.complete();
+//     observer.next('This will not be send!');
+//   } catch (err) {
+//     observer.error(err);
+//   }
+// }

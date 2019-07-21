@@ -19,7 +19,7 @@ export class InfiniteObservableWithCancelComponent implements OnInit {
   }
 
   myObservable() {
-    this.observable = Observable.create(observer => {
+    this.observable = Observable.create( (observer) => {
       try {
         observer.next('Hello There!');
         observer.next('Do You want to learn Rxjs Concept?');
@@ -52,3 +52,18 @@ export class InfiniteObservableWithCancelComponent implements OnInit {
     }, 4001);
   }
 }
+
+// Following code is Producer
+// Producer is activated when it's subscription is created
+
+// (observer) => {
+//   try {
+//     observer.next('Hello There!');
+//     observer.next('Do You want to learn Rxjs Concept?');
+//     setInterval(() => {
+//       observer.next('Yes ! I want to Learn.');
+//     }, 2000);
+//   } catch (err) {
+//     observer.error(err);
+//   }
+// }

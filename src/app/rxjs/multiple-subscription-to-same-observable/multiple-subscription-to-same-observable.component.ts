@@ -20,7 +20,7 @@ export class MultipleSubscriptionToSameObservableComponent implements OnInit {
   }
 
   myObservable() {
-    this.observable = Observable.create(observer => {
+    this.observable = Observable.create( (observer) => {
       try {
         observer.next('Hello There!');
         setInterval(() => {
@@ -62,3 +62,17 @@ export class MultipleSubscriptionToSameObservableComponent implements OnInit {
   }
 
 }
+
+// Following code is Producer
+// Producer is activated when it's subscription is created
+
+// (observer) => {
+//   try {
+//     observer.next('Hello There!');
+//     setInterval(() => {
+//       observer.next('This is Single Observable with multiple subscription.');
+//     }, 2000);
+//   } catch (err) {
+//     observer.error(err);
+//   }
+// }

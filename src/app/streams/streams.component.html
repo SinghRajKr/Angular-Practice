@@ -1,0 +1,26 @@
+<div style="display: flex; align-items:center; flex-direction:column ">
+<h2>Set Interval</h2>
+<p [innerHTML] = "setIntervalOutputCode"></p>
+<P>Set Interval will update following count after each 1 Seconds.</P>
+<p style="color: blueviolet">{{setIntervalOutput}}</p>
+
+<h2>Set Timeout</h2>
+<p [innerHTML] = "setTimeoutOutputCode"></p>
+<P>Set Timeout will Expire in 10 Seconds.</P>
+<p style="color: blueviolet">{{setTimeoutOutput}}</p>
+
+<h2>Mouse Click Event Streams</h2>
+<p [innerHTML] = "clickEventStreamsCode"></p>
+<p>Check Your Console for Mouse Click Event Streams</p>
+<p style="color: blueviolet">{{clickEventStreams|json}}</p>
+
+
+<h2>Current Time will be Displayed after 5 Second</h2>
+<p [innerHTML] = "setTimeoutSetIntervalCode"></p>
+<p>It is achieved by SetTimeout to Display after 5 Second and then SetInterval to refresh each seconds</p>
+<p style="color: blueviolet">{{currentTime}}</p>
+</div>
+
+
+
+
